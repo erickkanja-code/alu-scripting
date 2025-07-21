@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-0-subs
+python3 -c 'print(__import__("my_module").__doc__)'
 """
 
 import json
