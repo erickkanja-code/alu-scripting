@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-Documentation to check how many subs for Reddit API
-Just to ensure it's well documented
-"""
+"""Documentation to check how many subs for Reddit API. Just to ensure it's well documented"""
 
 import json
 import requests
