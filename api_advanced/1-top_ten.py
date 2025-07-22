@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-Function querrying the Reddit API and prints the titles of the first 10 hot posts listed for a subreddit
+Module: 1-top_ten.py
+Purpose: Print titles of first 10 hot posts in a subreddit
 """
 
-import json
-import requests
+
 
 def top_ten(subreddit):
     headers = {"User-Agent": "desktop:TopTenActivity:v1.0.0"}
@@ -20,4 +20,6 @@ def top_ten(subreddit):
             return 0
 
 if __name__ == "__main__":
+    import json
+    import requests
     top_ten("python")
