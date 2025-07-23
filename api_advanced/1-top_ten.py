@@ -8,13 +8,16 @@ import json
 
 
 def top_ten(subreddit):
+    """
+    Function to get top 10 hot posts in a given subreddit
+    """
     headers = {"User-Agent": "desktop:TopTenActivity:v1.0.0"}
     query = f"https://www.reddit.com/r/{subreddit}/hot.json"
     params = {"limit": "10"}
     res = requests.get(query, headers=headers, params=params)
-    if (res.status_code == 200):
+    if res.status_code == 200:
         i = 0
-        while (i < 10):
+        while i < 10:
             print(res.json()['data']['children'][i]['data']['title'])
             i += 1
     else:

@@ -7,6 +7,7 @@ import json
 import requests
 
 def recurse(subreddit, hot_list=[], after=None):
+    """Function to study recursion"""
     query = f"https://www.reddit.com/r/{subreddit}/hot.json"
     headers = {"USER-AGENT": "laptop:Assignment2Script2:v1.1.0"}
     params = {"after": after}
@@ -23,4 +24,5 @@ def recurse(subreddit, hot_list=[], after=None):
         return hot_list
 
 if __name__ == "__main__":
+    """Main function"""
     recurse("csmajors")
