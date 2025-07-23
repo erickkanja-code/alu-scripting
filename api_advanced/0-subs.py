@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-python3 -c 'print(__import__("my_module").__doc__)'
+Module responsible for finding subscriber count in a given subreddit
 """
 
 import requests
