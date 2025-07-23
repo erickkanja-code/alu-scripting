@@ -4,7 +4,6 @@ Module: 1-top_ten.py
 Purpose: Print titles of first 10 hot posts in a subreddit
 """
 import requests
-import json
 
 
 def top_ten(subreddit):
@@ -21,7 +20,7 @@ def top_ten(subreddit):
             print(res.json()['data']['children'][i]['data']['title'])
             i += 1
     else:
-            print(None)
+        print(None)
 
 if __name__ == "__main__":
     top_ten("python")
