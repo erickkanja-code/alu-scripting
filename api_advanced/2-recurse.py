@@ -20,7 +20,7 @@ def recurse(subreddit, hot_list=[], after=None):
     if after:
         recurse(subreddit, hot_list, after)
     else:
-        print(hot_list)
+        return hot_list
 
 if __name__ == "__main__":
     recurse("csmajors")
