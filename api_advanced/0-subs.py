@@ -14,6 +14,7 @@ def number_of_subscribers(subreddit):
     query = f"https://www.reddit.com/r/{subreddit}/about.json"
     res = requests.get(query, headers=headers)
     if (res.status_code == 200):
+        """If statement"""
         return res.json()["data"]["subscribers"]
     else:
         return 0
